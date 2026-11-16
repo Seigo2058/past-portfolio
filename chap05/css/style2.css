@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.7;
+    color: #000;
+}
+
+section {
+    padding: 5vh 0;
+}
+
+a {
+    text-decoration: none;
+    /* 元の配色を継承 */
+    color: inherit;
+    /* アニメーションで表示速度を調整 */
+    transition: .5s;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: #398CED;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+.align-center {
+    margin: 5vh 0;
+    text-align: center;
+}
+
+/* ヘッダー・メインビジュアル */
+header {
+    /* 要素の場所を固定 */
+    position: fixed;
+    /* 上から0の位置 */
+    top: 0;
+    /* postionで指定した要素の重なり順 */
+    z-index: 3;
+    margin: 0 auto;
+    width: 100vw;
+    background-color: rgb(18 28 63 / 0.6);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 85vw;
+}
+
+.page-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-logo h1 {
+    font-size: large;
+    /* 文字間隔の設定 */
+    letter-spacing: 0.3rem;
+}
+
+.page-logo h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: xx-small;
+    letter-spacing: 0.02rem;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.cover-home {
+    background-image: url(../img/main_visual.png);
+}
+
+/* 見出し */
+.heading {
+    display: flex;
+    margin: 2vh 0;
+}
+
+.heading h2 {
+    color: #398CED;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+}
+
+.heading h3 {
+    margin: .5rem 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+.heading-large {
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+.heading-large span,
+.catchy-phrase span {
+    /* ブロック要素（改行あり）に変更 */
+    display: block;
+}
+
+.catchy-phrase {
+    /* キャッチコピーの設定 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 行の高さを指定 */
+    line-height: 1.7;
+    /* 文字の間隔の設定 */
+    letter-spacing: 0.3rem;
+    z-index: 2;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    /* インライン要素のように横幅縦幅を指定可能にする */
+    background-color: #398CED;
+    color: #fff;
+    width: 10rem;
+    padding: .5rem;
+    /* アニメーションで表示速度を調整 */
+    transition: .5s;
+}
+
+.btn:hover {
+    /*疑似クラスを使用してマウスホバー時の表示*/
+    background-color: #365982;
+}
+
+.btn::after {
+    /*疑似要素を使用して▶マークを表示*/
+    content: '▶';
+    margin-left: 1rem;
+}
+
+/* TOPIC */
+.news-item {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    border-top: solid 1px #000;
+}
+
+.news-item:last-child {
+    /* 最後の項目のみ下に罫線を引く */
+    border-bottom: solid 1px #000;
+}
+
+.date {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tag {
+    width: 7rem;
+    text-align: center;
+}
+
+.color01 {
+    background-color: #E7E9F9;
+}
+
+.color02 {
+    background-color: #F9E7E7;
+}
+
+.color03 {
+    background-color: #E4F5E5;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+}
+
+.left-contents {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.large-image {
+    margin: 0;
+    width: 50%;
+    text-align: center;
+}
+
+.box {
+    padding: 0;
+}
+
+.box-content {
+    width: auto;
+}
+
+/* FACULTY */
+#media {
+    background-color: #66B9B2;
+}
+
+#system {
+    background-color: #5B72AE;
+}
+
+#business {
+    background-color: #E0BE38;
+}
+
+#medical {
+    background-color: #CB7081;
+}
+
+.faculty-grid {
+    /* GRIDレイアウト */
+    display: grid;
+    /*1対1対1対1の配置*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* GRID間のギャップ指定 */
+    gap: 1vw;
+    /* 表示可能な横幅100%を使用 */
+    width: 100%;
+    /* 高さを300pxにする */
+    height: 300px;
+}
+
+.faculty-item {
+    /* 全体配置 */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.faculty {
+    /* 全体配置 */
+    position: absolute;
+    /* 下から2.2文字分 */
+    bottom: 2.2rem;
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.department {
+    position: absolute;
+    /* 下から0.5文字分 */
+    bottom: .5rem;
+    width: 100%;
+    font-size: larger;
+}
+
+.department::after {
+    /*疑似要素を使用して>マークを表示*/
+    position: absolute;
+    content: '>';
+    /* 右側から30px */
+    right: 30px;
+}
+
+/* フッター */
+footer {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background-color: #365982;
+    color: #fff;
+}
+
+footer .main-nav a {
+    /* デフォルトの設定色を継承 */
+    color: inherit;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.copyright {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    /* 右寄せ */
+    text-align: right;
+    margin: 10px 0;
+}
+
+/* スマフォ版の設定 */
+@media (max-width: 960px) {
+    .main-nav {
+        display: none;
+    }
+
+    .news-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area3";
+    }
+
+    .date {
+        grid-area: area1;
+    }
+
+    .tag {
+        grid-area: area2;
+    }
+
+    .news-item p {
+        grid-area: area3;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .left-contents {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .large-image {
+        width: 100%;
+    }
+
+    .faculty-grid {
+        /* 1:1の配置 */
+        grid-template-columns: 1fr 1fr;
+        /* grid間のギャップ指定 */
+        gap: 1vw;
+        /* 高さを60vhにする */
+        height: 60vh;
+    }
+
+    .department {
+        font-size: smaller;
+    }
+
+    .footer-menu,
+    .footer-nav .main-nav,
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav .main-nav {
+        width: 100%;
+        font-size: x-small;
+        text-align: center;
+        line-height: .1;
+        padding-bottom: 50px;
+    }
+}

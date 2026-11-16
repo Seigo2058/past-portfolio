@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sens-serif;
+    background: #e9eef2;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: large;
+    border-bottom: 3px solid #fff;
+    letter-spacing: 0.24em;
+    width: fit-content;
+}
+
+h2 {
+    color: #fff;
+    font-size: xx-large;
+    letter-spacing: 0.24em;
+}
+
+h3 {
+    font-size: x-large;
+    text-align: center;
+    border-bottom: 2px solid #b55233;
+    padding: 20px;
+}
+
+h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h5 {
+    font-size: large;
+    padding: 20px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    text-align: center;
+}
+
+/* メインビジュアル */
+main {
+    background-image: url(../img/nopporo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 20px;
+}
+
+main span {
+    margin: 20px 0;
+    padding: 6px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.13em;
+    color: #fff;
+    display: block;
+    width: fit-content;
+    /* 追加したスタイル */
+    background-color: rgb(0 0 0 / 30%);
+}
+
+main p {
+    font-size: 0.88rem;
+    color: #fff;
+    line-height: 1.75;
+    /* 追加したスタイル */
+    background-color: rgb(0 0 0 / 30%);
+    padding: 2%;
+    margin-top: 150px;
+}
+
+/* ヘッダー */
+header {
+    background-color: #fff;
+}
+
+header ul {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    line-height: 4.5;
+}
+
+header li {
+    width: 10em;
+    text-align: center;
+}
+
+header li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header li a:hover {
+    color: #aaa;
+    transition: .3s;
+}
+
+/* 各コンテンツ */
+article,
+div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figure {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* テーブルの装飾 */
+table {
+    border-spacing: 1em;
+    border: none;
+    /* 追加したスタイル */
+    width: 100%;
+}
+
+th {
+    padding: 15px;
+    font-size: large;
+    border: none;
+}
+
+td {
+    font-size: smaller;
+    border: none;
+}
+
+table span {
+    margin-right: 15px;
+}
+
+.technology,
+.design {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+}
+
+.technology {
+    background: #7dccf3;
+}
+
+.design {
+    background: #dadf00;
+}
+
+.more-btn {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+button {
+    border: 1.5px solid #b55233;
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 280px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #b55233;
+    color: #FFF;
+}
+
+/* お問い合わせフォーム */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+input,
+textarea {
+    line-height: 2em;
+    margin: 1em 0;
+}
+
+.button {
+    padding: 12px;
+    line-height: 1em;
+    transition: .3s;
+    border: 1px solid #333;
+    width: fit-content;
+}
+
+.button:hover {
+    box-shadow: none;
+    color: #333;
+    background: #fff;
+}
+
+/* フッター */
+footer {
+    height: auto;
+    text-align: center;
+    background: #714231;
+    color: #fff;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}

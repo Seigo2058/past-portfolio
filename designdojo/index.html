@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザイン道場ゼミ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black Han Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M PLUS 1" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=M+PLUS+1:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+</head>
+
+<body>
+    <div id="splash">
+        <div id="splash_logo"><img src="images/logo.svg" alt="" class="fadeUp1"></div>
+        <div id="splash_text"></div>
+        <!--/splash-->
+    </div>
+    <div id="contain">
+        <header>
+            <nav id="nav">
+                <ul class="main-nav">
+                    <div class="menu-item">
+                        <div class="logo-menu">
+                            <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+                        </div>
+                        <li><a href="about.html" style="text-decoration:none"><span class="font"><span
+                                        class="highlight">A</span>BOUT</span><br>Jゼミについて</a></li>
+                        <li><a href="works.html" style="text-decoration:none"><span class="font">W<span
+                                        class="highlight">O</span>RKS</span><br>製作作品</a></li>
+                        <li><a href="member.html" style="text-decoration:none"><span class="font">ME<span
+                                        class="highlight">M</span>BER</span><br>所属学生</a></li>
+                        <li><a href="index.html#NEWS" style="text-decoration:none"><span class="font">NEW<span
+                                        class="highlight">S</span></span><br>お知らせ</a></li>
+                        <li><a href="contact.html" style="text-decoration:none"><span class="font">CONT<span
+                                        class="highlight">A</span>CT</span><br>お問い合わせ</a></li>
+                        <div class="sns-menu">
+                            <div class="sns-menu-facebook">
+                                <a href=""><img src="images/facebook_menu.svg" alt=""></a>
+                            </div>
+                            <div class="sns-menu-x">
+                                <a href="https://x.com/chikalab330"><img src="images/x_menu.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="openbtn"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+                <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                    <ul>
+                        <li><a href="about.html" style="text-decoration:none"><span class="font-sp"><span
+                                        class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a></li>
+                        <li><a href="works.html" style="text-decoration:none"><span class="font-sp">W<span
+                                        class="highlight-white">O</span>RKS</span><br>製作作品</a></li>
+                        <li><a href="member.html" style="text-decoration:none"><span class="font-sp">ME<span
+                                        class="highlight-white">M</span>BER</span><br>所属学生</a></li>
+                        <li><a href="news.html" style="text-decoration:none"><span class="font-sp">NEW<span
+                                        class="highlight-white">S</span></span><br>お知らせ</a></li>
+                        <li><a href="contact.html" style="text-decoration:none"><span class="font-sp">CONT<span
+                                        class="highlight-white">A</span>CT</span><br>お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="ham-logo">
+                <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+            </div>
+        </header>
+
+        <main>
+            <div id="TOP">
+                <div class="top-back">
+                    <img src="images/top_back.svg" alt="">
+                </div>
+                <div class="top-title afadeUpTrigger">
+                    <p><span class="highlight-green">D</span>ESIGN <span class="highlight-green">D</span>OJO</p>
+                </div>
+                <div id="slider"></div>
+                <div class="top-title-under ifadeUpTrigger">
+                    <p><span class="highlight-white">S</span>EMINAR</p>
+                </div>
+
+                <article id="ABOUT">
+                    <div class="about-arrow">
+                        <img src="images/about-arrow.svg" class="target" alt="Pteranodon" />
+                    </div>
+                    <div class="about-contents">
+                        <div>
+                            <div class="about-back-title">
+                                <p>ABOUT</p>
+                            </div>
+                            <section class="about-p">
+                                <h1 class="fadeUpTrigger">つくりたいものを、個人のペースで。</h1>
+                                <p class="fadeUpTrigger">「デザインに <span class="highlight-green">興味</span>がある」「デザイン<span
+                                        class="highlight-green">上手</span>になりたい」「デザインも<span
+                                        class="highlight-green">学んで</span>みたい」<br>
+                                    という学生を対象にした、デザイン入門ゼミ（全学科対象）です。<br></p>
+                                <p class="afadeUpTrigger">
+                                    Webデザインを中心としますが、<br>
+                                    グラフィック・イラスト・パッケージなど分野は問いません。<br></p>
+                                <p class="ifadeUpTrigger">
+                                    Illustrator・Photoshop・XD・Figmaなどでの制作トレーニングから始めて、<br>
+                                    学外コンテストや企業等連携プロジェクトなどに挑戦します。</p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="button-about ifadeUpTrigger">
+                        <button class="about-button">
+                            <a href="">more　></a>
+                        </button>
+                    </div>
+
+                    <div class="activity">
+                        <img src="images/activity-img.webp" alt="">
+                    </div>
+                    <div class="c-text">
+                        <div class="c-text__item">DESIGN DOJO SEMINAR 2024　</div>
+                        <div class="c-text__item">DESIGN DOJO SEMINAR 2024　</div>
+                    </div>
+                </article>
+
+                <article id="NEWS">
+                    <div class="news-back">
+                        <div class="news-contents">
+                            <div class="news-title">
+                                <h2 class="fadeUpTrigger"><span class="highlight-green">N</span>EWS</h2>
+                                <p class="afadeUpTrigger">お知らせ</p>
+                            </div>
+                            <div class="news-article">
+                                <div class="news-text fadeUpTrigger">
+                                    <a href="">
+                                        <div class="news-img">
+                                            <img src="images/moegi.webp" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="news-p">
+                                        <p>活動成果展「もえぎ展」を開催いたします。<br>
+                                            2025.01.31
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="news-text afadeUpTrigger">
+                                    <a href="">
+                                        <div class="news-img">
+                                            <img src="images/news-Christmas.webp" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="news-p">
+                                        <p>大忘年会＆クリスマス会を行いました！<br>
+                                            2024.10.13
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="news-text ifadeUpTrigger">
+                                    <a href="">
+                                        <div class="news-img">
+                                            <img src="images/news-soutensai.webp" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="news-p">
+                                        <p>蒼天祭で喫茶店＆作品販売を行いました！<br>
+                                            2024.10.13
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="button-news ifadeUpTrigger">
+                            <button class="news-button">
+                                <a href="">more　></a>
+                            </button>
+                        </div>-->
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="member-back">
+                        <div id="MEMBER">
+                            <div class="member-contents">
+                                <div class="member-title">
+                                    <h2 class="fadeUpTrigger"><span class="highlight-green">M</span>EMBER</h2>
+                                    <p class="afadeUpTrigger">学生紹介
+                                    </p>
+                                </div>
+                                <div class="member-back-contents">
+                                    <div class="Container">
+                                        <div class="Box-Container">
+                                            <img class="fadeUpTrigger" src="images/member-1.webp" alt="">
+                                            <img class="afadeUpTrigger" src="images/member-2.webp" alt="">
+                                            <img class="ifadeUpTrigger" src="images/member-3.webp" alt="">
+                                        </div>
+
+                                        <p class="afadeUpTrigger">1年～3年で構成される個性豊かなメンバーをご紹介！</p>
+
+                                        <div class="button-member ifadeUpTrigger">
+                                            <button class="member-button">
+                                                <a href="">more　></a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="WORKS">
+                                <div class="works-title">
+                                    <h2 class="fadeUpTrigger"><span class="highlight-green">W</span>ORKS</h2>
+                                    <p class="afadeUpTrigger">学生作品</p>
+                                </div>
+                                <ul class="slider-works">
+                                    <a href="member.html#info-13">
+                                        <li><img src="images/work/illustration/1-oh1-hrk.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-12">
+                                        <li><img src="images/work/illustration/2-on1.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-10">
+                                        <li><img src="images/work/illustration/2-ym1.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-6">
+                                        <li><img src="images/work/illustration/2-ws2.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-1">
+                                        <li><img src="images/work/illustration/3-ik4-ishiki.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-5">
+                                        <li><img src="images/work/illustration/2-ay1-No Title.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-12">
+                                        <li><img src="images/work/illustration/2-on7.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-3">
+                                        <li><img src="images/work/scenario/3-nk6.webp" alt=""></li>
+                                    </a>
+                                    <!--/slider-->
+                                </ul>
+                                <ul class="slider-works1" dir="rtl">
+                                    <a href="member.html#info-18">
+                                        <li><img src="images/work/scenario/1-ym1-Dysphoria01.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-1">
+                                        <li><img src="images/work/graphic/3-ik-obaka.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-">
+                                        <li><img src="images/work/3dcg/2-oa1.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-4">
+                                        <li><img src="images/work/scenario/1-ym2-Dysphoria02.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-8">
+                                        <li><img src="images/work/webdesign/2-ty1.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-7">
+                                        <li><img src="images/work/graphic/2-ss6-SOISEP.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-1">
+                                        <li><img src="images/work/graphic/3-ik5-nerukohasodatsu.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-18">
+                                        <li><img src="images/work/scenario/1-ym3-Dysphoria03.webp" alt=""></li>
+                                    </a>
+                                </ul>
+                                <ul class="slider-works">
+                                    <a href="member.html#info-5">
+                                        <li><img src="images/work/illustration/2-ay2-Notitle.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-12">
+                                        <li><img src="images/work/illustration/2-on2.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-6">
+                                        <li><img src="images/work/illustration/2-ws3.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-3">
+                                        <li><img src="images/work/scenario/3-nk2.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-7">
+                                        <li><img src="images/work/graphic/2-ss4-genseki.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-1">
+                                        <li><img src="images/work/illustration/3-ik1-adu.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-6">
+                                        <li><img src="images/work/illustration/2-wn1.webp" alt=""></li>
+                                    </a>
+                                    <a href="member.html#info-3">
+                                        <li><img src="images/work/scenario/3-nk4.webp" alt=""></li>
+                                    </a>
+                                </ul>
+
+                                <div class="button-works fadeUpTrigger">
+                                    <button class="works-button">
+                                        <a href="member.html">more　></a>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="TERCHER">
+                                <div class="tercher-arrow">
+                                    <img src="images/tercher-arrow.svg" class="target1" alt="Pteranodon" />
+                                </div>
+                                <div class="tercher-title">
+                                    <h2 class="fadeUpTrigger"><span class="highlight-green">T</span>ERCHRE</h2>
+                                    <p class="afadeUpTrigger">教員紹介</p>
+                                </div>
+
+
+                                <div class="tercher-contents">
+                                    <div class="tercher-img fadeUpTrigger">
+                                        <img src="images/tercher.webp" alt="">
+                                    </div>
+                                    <div class="tercher-p">
+                                        <h3 class="afadeUpTrigger">近澤 潤<br>
+                                            <span>Jun Chikazawa</span>
+                                        </h3>
+                                        <p class="ifadeUpTrigger"><span>研究分野</span><br>
+                                            発想法、デザイン思考、コンテンツデザイン、<br>
+                                            イノベーション教育、モチベーション教育、<br>
+                                            プロジェクト型学習(PBL)、UI/UXデザイン、<br>
+                                            地域・産学連携、教育工学</p>
+                                    </div>
+                                </div>
+                                <div class="button-tercher ifadeUpTrigger">
+                                    <button class="tercher-button">
+                                        <a href="about.html#about-tercher">more　></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="SNS">
+                    <div class="sns-title">
+                        <h2 class="fadeUpTrigger"><span class="highlight-green">S</span>NS</h2>
+                        <p class="afadeUpTrigger">ソーシャルメディア</p>
+                    </div>
+                    <div class="sns-line afadeUpTrigger">
+                        <img src="images/sns-line.svg" alt="">
+                    </div>
+                    <div class="sns-icon ifadeUpTrigger">
+                        <a href="https://x.com/chikalab330"><img src="images/sns-x.svg" alt=""></a>
+                        <a href=""><img src="images/sns-facebook.svg" alt=""></a>
+                        <a href=""><img src="images/sns-instagram.svg" alt=""></a>
+                    </div>
+                    <div class="sns">
+                        <a class="twitter-timeline" data-width="500" data-height="500"
+                            href="https://twitter.com/chikalab330?ref_src=twsrc%5Etfw">Tweets by chikalab330</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </article>
+
+                <footer>
+                    <div class="foot-back">
+                        <img src="images/footer-back.svg" alt="">
+                    </div>
+
+                    <div class="footer-contents">
+                        <div class="footer-logo">
+                            <img src="images/footer-logo.svg" alt="">
+                        </div>
+                        <div class="footer-menu">
+                            <a href="about.html" style="text-decoration:none"><span class="font-foot"><span
+                                        class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a>
+                            <a href="event.html" style="text-decoration:none"><span class="font-foot">W<span
+                                        class="highlight-white">O</span>RKS</span><br>製作作品</a>
+                            <a href="clinic.html" style="text-decoration:none"><span class="font-foot">ME<span
+                                        class="highlight-white">M</span>BER</span><br>所属学生</a>
+                            <a href="" style="text-decoration:none"><span class="font-foot">CONT<span
+                                        class="highlight-white">A</span>CT</span><br>お問い合わせ</a>
+                        </div>
+                    </div>
+                    <div class="footer-text">
+                        <div class="footer-sns">
+                            <img src="images/sns-x.svg" alt="">
+                            <img src="images/sns-facebook.svg" alt="">
+                            <img src="images/sns-instagram.svg" alt="">
+                        </div>
+                        <p><span>プライバシーポリシー</span><br>
+                            ©DESIGN DOJO SEMINAR 2024</p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+        <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/move.js"></script>
+    </div>
+</body>

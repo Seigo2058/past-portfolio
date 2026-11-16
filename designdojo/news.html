@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デザイン道場ゼミ / NEWS</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/news.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black Han Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M PLUS 1" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=M+PLUS+1:wght@100..900&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+</head>
+
+<body>
+
+  <header>
+    <nav id="nav">
+      <ul class="main-nav">
+        <div class="menu-item">
+          <div class="logo-menu">
+            <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+          </div>
+          <li><a href="about.html" style="text-decoration:none"><span class="font"><span
+                  class="highlight">A</span>BOUT</span><br>Jゼミについて</a></li>
+          <li><a href="works.html" style="text-decoration:none"><span class="font">W<span
+                  class="highlight">O</span>RKS</span><br>製作作品</a></li>
+          <li><a href="member.html" style="text-decoration:none"><span class="font">ME<span
+                  class="highlight">M</span>BER</span><br>所属学生</a></li>
+          <li><a href="index.html#NEWS" style="text-decoration:none"><span class="font">NEW<span
+                  class="highlight">S</span></span><br>お知らせ</a></li>
+          <li><a href="contact.html" style="text-decoration:none"><span class="font">CONT<span
+                  class="highlight">A</span>CT</span><br>お問い合わせ</a></li>
+          <div class="sns-menu">
+            <div class="sns-menu-facebook">
+              <a href=""><img src="images/facebook_menu.svg" alt=""></a>
+            </div>
+            <div class="sns-menu-x">
+              <a href="https://x.com/chikalab330"><img src="images/x_menu.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+        <ul>
+          <li><a href="about.html" style="text-decoration:none"><span class="font-sp"><span
+                  class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a></li>
+          <li><a href="works.html" style="text-decoration:none"><span class="font-sp">W<span
+                  class="highlight-white">O</span>RKS</span><br>製作作品</a></li>
+          <li><a href="member.html" style="text-decoration:none"><span class="font-sp">ME<span
+                  class="highlight-white">M</span>BER</span><br>所属学生</a></li>
+          <li><a href="news.html" style="text-decoration:none"><span class="font-sp">NEW<span
+                  class="highlight-white">S</span></span><br>お知らせ</a></li>
+          <li><a href="contact.html" style="text-decoration:none"><span class="font-sp">CONT<span
+                  class="highlight-white">A</span>CT</span><br>お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="ham-logo">
+      <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+    </div>
+  </header>
+
+  <!--<section>
+    <img class="image-contents" id="img-1" src="../img/18225_color.png">
+    <img class="image-contents" id="img-2" src="../img/2429.png">
+    <img class="image-contents" id="img-3" src="../img/20101_color.png">
+    <img class="image-contents" id="img-4" src="../img/17561.png">
+    <img class="image-contents" id="img-5" src="../img/17597_color.png">
+  </section>-->
+
+  <div class="container">
+    <div class="top-wrapper">
+      <div class="title-group">
+        <h1 class="title1"><span>N</span>EWS</h1>
+        <h1 class="title2">最近の出来事について</h1>
+      </div>
+    </div>
+
+    <div id="news">
+      <!-- ポップアップ用オーバーレイ -->
+      <div class="overlay" id="popupOverlay">
+        <div class="popup">
+          <button class="close-btn" id="closePopup"></button>
+          <div id="popupContent"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-back">
+      <img src="images/footer-back.svg" alt="">
+    </div>
+
+    <div class="footer-contents">
+      <div class="footer-logo">
+        <img src="images/footer-logo.svg" alt="">
+      </div>
+      <div class="footer-menu">
+        <a href="about.html" style="text-decoration:none"><span class="font-foot"><span
+              class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a>
+        <a href="event.html" style="text-decoration:none"><span class="font-foot">W<span
+              class="highlight-white">O</span>RKS</span><br>製作作品</a>
+        <a href="clinic.html" style="text-decoration:none"><span class="font-foot">ME<span
+              class="highlight-white">M</span>BER</span><br>所属学生</a>
+        <a href="contact.html" style="text-decoration:none"><span class="font-foot">CONT<span
+              class="highlight-white">A</span>CT</span><br>お問い合わせ</a>
+      </div>
+    </div>
+    <div class="footer-text">
+      <div class="footer-sns">
+        <img src="images/sns-x.svg" alt="">
+        <img src="images/sns-facebook.svg" alt="">
+        <img src="images/sns-instagram.svg" alt="">
+      </div>
+      <p><span>プライバシーポリシー</span><br>
+        ©DESIGN DOJO SEMINAR 2024</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/news.js"></script>
+  <script src="js/move.js"></script>
+</body>

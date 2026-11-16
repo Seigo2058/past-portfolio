@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    /* 上下左右の外枠の空白0 */
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+section {
+    padding: 1em;
+    /* 左右上下1文字分の余白*/
+    color: white;
+    /* 文字色は白 */
+    text-align: center;
+    /* 文字列の中央寄せ */
+    font-size: 50px;
+    /* 文字サイズは50px */
+}
+
+#s1 {
+    background: #6aa;
+}
+
+#s2 {
+    background: #ccc;
+}
+
+#s3 {
+    background: #b9d;
+}

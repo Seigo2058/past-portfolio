@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザイン道場ゼミ / ABOUT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=M+PLUS+1:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <script src="js/about.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul class="main-nav">
+                <div class="menu-item">
+                    <div class="logo-menu">
+                        <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+                    </div>
+                    <li><a href="about.html" style="text-decoration:none"><span class="font"><span
+                                    class="highlight">A</span>BOUT</span><br>Jゼミについて</a></li>
+                    <li><a href="works.html" style="text-decoration:none"><span class="font">W<span
+                                    class="highlight">O</span>RKS</span><br>製作作品</a></li>
+                    <li><a href="member.html" style="text-decoration:none"><span class="font">ME<span
+                                    class="highlight">M</span>BER</span><br>所属学生</a></li>
+                    <li><a href="index.html#NEWS" style="text-decoration:none"><span class="font">NEW<span
+                                    class="highlight">S</span></span><br>お知らせ</a></li>
+                    <li><a href="contact.html" style="text-decoration:none"><span class="font">CONT<span
+                                    class="highlight">A</span>CT</span><br>お問い合わせ</a></li>
+                    <div class="sns-menu">
+                        <div class="sns-menu-facebook">
+                            <a href=""><img src="images/facebook_menu.svg" alt=""></a>
+                        </div>
+                        <div class="sns-menu-x">
+                            <a href="https://x.com/chikalab330"><img src="images/x_menu.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                <ul>
+                    <li><a href="about.html" style="text-decoration:none"><span class="font-sp"><span
+                                    class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a></li>
+                    <li><a href="event.html" style="text-decoration:none"><span class="font-sp">W<span
+                                    class="highlight-white">O</span>RKS</span><br>製作作品</a></li>
+                    <li><a href="clinic.html" style="text-decoration:none"><span class="font-sp">ME<span
+                                    class="highlight-white">M</span>BER</span><br>所属学生</a></li>
+                    <li><a href="contact.html" style="text-decoration:none"><span class="font-sp">NEW<span
+                                    class="highlight-white">S</span></span><br>お知らせ</a></li>
+                    <li><a href="contact.html" style="text-decoration:none"><span class="font-sp">CONT<span
+                                    class="highlight-white">A</span>CT</span><br>お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="ham-logo">
+            <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+        </div>
+    </header>
+    <!-- トップの紹介文 -->
+    <header id="top-wrapper">
+        <div class="container">
+
+            <div id="title-group">
+                <div>
+                    <h1><span>A</span>BOUT</h1>
+                    <h2>このJゼミについて</h2>
+                </div>
+                <img class="decoration-img" id="decoration-img1" src="images/decoration/12187_color.webp" alt="学校のイラスト">
+            </div>
+
+            <div id="about">
+                <p>
+                    情報メディア学部の近澤潤先生の自主ゼミ「<span>デザイン道場ゼミ</span>」です<br>
+                    学年や学部、学科は一切関係なし！履修登録も必要なし！<br>
+                    情報大生なら、何月からでも入門可能です
+                </p>
+                <img class="decoration-img" id="decoration-img2" src="images/decoration/17561_color.webp"
+                    alt="コードをタイピングしている女性">
+            </div>
+
+            <img class="about-img" src="images/student/about_main1.webp" alt="カフェで学生が作業している">
+
+            <div id="description">
+                <div>
+                    <h3><span>デザイン道場ゼミ</span>とは？</h3>
+                    <p>「<span>デザインに興味がある</span>」「<span>デザイン上手になりたい</span>」「<span>デザインも学んでみたい</span>」という学生を対象にした、デザイン入門ゼミ（全学科対象）です。
+                    </p>
+                    <p>Webデザインを中心としますが、グラフィック・イラスト・パッケージなど分野は問いません。Illustrator・Photoshop・XD・Figmaなどでの制作トレーニングから始めて、学外コンテストや企業等連携プロジェクトなどに挑戦します。
+                    </p>
+                </div>
+                <img class="decoration-img" id="decoration-img3" src="images/decoration/18225_color.webp"
+                    alt="男女がデスクで話し合っている">
+            </div>
+
+            <img class="about-img" src="images/student/about_main2.webp" alt="研究室で学生が作業している">
+
+        </div>
+    </header>
+
+    <!-- 人数と学習分野内訳 -->
+    <div id="learn-wrapper">
+        <div class="container container-space rectangle">
+
+            <div id="learntitle-group">
+                <div id="text-unit">
+                    <h3 id="learn-title"><span>こ</span>んなことを学んでいます</h3>
+                    <p>今までにイラストなどを描いたことがなくてもOK！デザインに少しでも興味があればぜひ見学に来てください！</p>
+                </div>
+                <div id="learn-img">
+                    <img class="decoration-img" id="decoration-img4" src="images/decoration/20101_color.webp"
+                        alt="ノートパソコンに座っている男性">
+                    <img class="decoration-img" id="decoration-img5" src="images/decoration/9406_color.webp"
+                        alt="本を読んで閃いている女性">
+                </div>
+            </div>
+
+            <!-- グラフ -->
+            <div id="graph-wrapper">
+                <table class="charts-css bar show-labels show-primary-axis data-spacing-10 show-heading">
+                    <caption> 各分野の人数は延べです。 </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"> category </th>
+                            <th scope="col"> breakdown </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"> Webデザイン・コーティング </th>
+                            <td style="--size: calc(14 / 14)"><span class="data"> 14人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> グラフィックデザイン </th>
+                            <td style="--size: calc(9 / 14)"><span class="data"> 9人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> イラストレーション </th>
+                            <td style="--size: calc(8 / 14)"><span class="data"> 8人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> 映像 </th>
+                            <td style="--size: calc(8 / 14)"><span class="data"> 8人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> ゲーム・TRPG </th>
+                            <td style="--size: calc(4 / 14)"><span class="data"> 4人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> シナリオライティング </th>
+                            <td style="--size: calc(3 / 14)"><span class="data"> 3人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> 3DCG </th>
+                            <td style="--size: calc(2 / 14)"><span class="data"> 2人 </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> DTM </th>
+                            <td style="--size: calc(2 / 14)"><span class="data"> 2人 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="btn-unit">
+                <a id="work-btn" href="#" src="works.html">学生の作品を見る</a>
+                <img src="images/decoration/desktop-ic-baseline-arrow-forward-ios.svg" alt="矢印">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 先生紹介 -->
+    <section id="teacher-wrapper">
+        <div class="container container-space">
+
+            <h3><span>近</span>澤先生に聞いてみた！</h3>
+
+            <div class="teacher-title">
+                <img class="decoration-img" src="images/decoration/18614.webp" alt="手を顎に当て、はてなを浮かべる女性">
+                <h2 class="sub-title">デザイン道場ゼミってなに？</h2>
+                <img class="decoration-img" src="images/decoration/18947_color.webp" alt="スーツを着て、手を顎に当て、はてなを浮かべる男性">
+            </div>
+            <div class="qa-container">
+                <div class="qa1" id="qaID1"></div>
+            </div>
+
+            <div class="teacher-title">
+                <img class="decoration-img" src="images/decoration/18614.webp" alt="手を顎に当て、はてなを浮かべる女性">
+                <h2 class="sub-title">近澤先生ってどんな人？</h2>
+                <img class="decoration-img" src="images/decoration/18947_color.webp" alt="スーツを着て、手を顎に当て、はてなを浮かべる男性">
+            </div>
+            <div class="qa-container">
+                <div class="qa2" id="qaID2"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot-back">
+            <img src="images/footer-back.svg" alt="">
+        </div>
+
+        <div class="footer-contents">
+            <div class="footer-logo">
+                <img src="images/footer-logo.svg" alt="">
+            </div>
+            <div class="footer-menu">
+                <a href="about.html" style="text-decoration:none"><span class="font-foot"><span
+                            class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a>
+                <a href="event.html" style="text-decoration:none"><span class="font-foot">W<span
+                            class="highlight-white">O</span>RKS</span><br>製作作品</a>
+                <a href="clinic.html" style="text-decoration:none"><span class="font-foot">ME<span
+                            class="highlight-white">M</span>BER</span><br>所属学生</a>
+                <a href="" style="text-decoration:none"><span class="font-foot">CONT<span
+                            class="highlight-white">A</span>CT</span><br>お問い合わせ</a>
+            </div>
+        </div>
+        <div class="footer-text">
+            <div class="footer-sns">
+                <img src="images/sns-x.svg" alt="">
+                <img src="images/sns-facebook.svg" alt="">
+                <img src="images/sns-instagram.svg" alt="">
+            </div>
+            <p><span>プライバシーポリシー</span><br>
+                ©DESIGN DOJO SEMINAR 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

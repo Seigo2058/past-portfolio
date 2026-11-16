@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スクロールで色変化</title>
+    <style>
+        .banners {
+            display: flex;
+        }
+
+        .banners .banner {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .banners .banner .banner-content {
+            color: white;
+        }
+
+        .bg-zoom {
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .bg-zoom:after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100% ;
+            top: 0;
+            background: url(https://picsum.photos/id/237/200/300) no-repeat center center;
+            transition: all .8s ease;
+            background-size: cover;
+        }
+
+        .bg-zoom:hover:after {
+            opacity: .3;
+            transform: scale(1.05);
+        }
+
+        .bg-zoom .bg-zoom-content {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="banners">
+        <a class="banner bg-zoom" href="#">
+            <div class="banner-content bg-zoom-content">
+                <p>text</p>
+            </div>
+        </a>
+        <a class="banner bg-zoom" href="#">
+            <div class="banner-content bg-zoom-content">
+                <p>text</p>
+            </div>
+        </a>
+        <a class="banner bg-zoom" href="#">
+            <div class="banner-content bg-zoom-content">
+                <p>text</p>
+            </div>
+        </a>
+    </section>
+</body>
+
+</html>

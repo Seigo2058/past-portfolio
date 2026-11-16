@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    /* 上下左右の余白０ */
+    color: #fff;
+    /* 文字色 白 */
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+main {
+    /* width: 60vw; */
+    height: 80vh;
+    background: #EDF5F8;
+    color: #434141;
+    /* 文字色 濃いグレー */
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#sub1 {
+    /* width: 20vw; */
+    height: 80vh;
+    background: #69B6D1;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#sub2 {
+    /* width: 20vw; */
+    height: 80vh;
+    background: #4496CC;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+header,
+footer {
+    height: 10vh;
+    background: #043D79;
+}
+
+/* テキストを縦横中央揃えにするための共通設定 */
+main,
+#sub1,
+#sub2,
+header,
+footer {
+    display: flex;
+    /* フレックスボックスの設定 */
+    justify-content: center;
+    /* 横方向の中央揃え */
+    align-items: center;
+    /* 縦方向の中央揃え */
+}

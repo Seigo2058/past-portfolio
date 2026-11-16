@@ -1,0 +1,478 @@
+/* 全体のレイアウト */
+
+
+#g-nav {
+  display: none;
+}
+
+.ham-logo {
+  display: none;
+}
+
+.logo-sp {
+  display: none;
+}
+
+.logo-menu img {
+  object-fit: cover;
+  width: 12vw;
+  margin-top: 13px;
+}
+
+header {
+  padding: 0px 30px 70px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #fff;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 70vw;
+  height: 12vh;
+}
+
+.menu-item a {
+  font-size: 1.2vw;
+  text-align: center;
+  color: #000;
+}
+
+.font {
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
+  font-size: 1.4vw;
+  color: #000;
+}
+
+.menu-item a:hover {
+  color: #86B81B;
+}
+
+.highlight {
+  color: #86B81B;
+}
+
+.highlight-green {
+  color: #86B81B;
+}
+
+.highlight-white {
+  color: #fff;
+}
+
+.menu-item li {
+  text-align: center;
+  line-height: 1;
+}
+
+.sns-menu img {
+  width: 3vw;
+}
+
+.sns-menu {
+  display: flex;
+  margin-top: 10px;
+}
+
+.sns-menu-x {
+  margin-left: 10px;
+}
+
+/* FOOTER */
+footer {
+  /* .foot-backの親要素 */
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.foot-back {
+  /* .footerに対する位置 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.foot-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer-contents,
+.footer-text {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+.footer-logo img {
+  width: 70%;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-menu a {
+  font-weight: bolder;
+  font-size: 1.2vw;
+  color: #000;
+  text-align: center;
+}
+
+.font-foot {
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
+  font-size: 1.4vw;
+  color: #000;
+}
+
+.footer-sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-text {
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.footer-text p {
+  color: #fff;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.footer-text p span {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/*  */
+body {
+  background: #f3f3f1;
+  font-family: "M PLUS 1";
+  color: #000;
+  font-weight: 800;
+  line-height: 1.75;
+  letter-spacing: 0.8px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* タイトル */
+.title-group {
+  margin: 100px 0;
+}
+
+.title1 {
+  color: var(--designdojo-, #000);
+  font-family: "Black Han Sans";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: 4.8px;
+}
+
+.title1 span {
+  color: var(--designdojo-green4, #86B81B);
+}
+
+.title2 {
+  color: #000;
+  font-family: "M PLUS 1";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+
+.image-contents {
+  position: absolute;
+}
+
+/*
+#img-1 {
+  width: 150px;
+  height: 110px;
+  flex-shrink: 0;
+  margin-left: 1500px;
+  margin-top: 70px;
+}
+
+#img-2 {
+  width: 200px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-top: 250px;
+  margin-left: 200px;
+}
+
+#img-3 {
+  width: 93px;
+  height: 98px;
+  flex-shrink: 0;
+  margin-top: 600px;
+  margin-left: 1490px;
+}
+
+#img-4 {
+  width: 180px;
+  height: 140px;
+  flex-shrink: 0;
+  margin-top: 730px;
+  margin-left: 60px;
+}
+
+#img-5 {
+  width: 140px;
+  height: 90px;
+  flex-shrink: 0;
+  margin-top: 1200px;
+  margin-left: 1600px;
+}
+*/
+
+/*途中*/
+.br1 {
+  width: 90%;
+  border-top: 1px solid #d9d9d9;
+  margin: 0 auto;
+  height: 152px;
+  flex-shrink: 0;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+.br2 {
+  width: 90%;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 auto;
+  height: 152px;
+  flex-shrink: 0;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+/* ポップアップのスタイル */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 不透明度50% */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup {
+  background-color: white;
+  /* 背景色は白 */
+  width: 40%;
+  height: 75%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.popup-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 水平方向に中央揃え */
+  text-align: center;
+  /* テキストも中央揃え */
+  width: 60%;
+  margin: 0 auto;
+}
+
+.popup-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* 画像を中央揃え */
+}
+
+
+.popup-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-date {
+  font-size: 16px;
+  color: gray;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.popup-detail {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 18px;
+}
+
+#news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 改行されない */
+.title {
+  margin: auto;
+}
+
+.article {
+  width: 400px;
+  margin-top: 10%;
+}
+
+/* #news 内の画像にスタイルを適用 */
+#news .article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* 画像を比率を保ったまま表示 */
+  margin-bottom: 10px;
+}
+
+/* 記事全体のスタイル */
+#news .article {
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#news .article:hover {
+  transform: scale(1.02);
+  /* ホバー時に少し拡大 */
+}
+
+.date {
+  float: right;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.detail {
+  font-size: 15px;
+  padding-top: 5%;
+  line-height: 24px;
+}
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  margin-bottom: 5%;
+}
+
+.Pagination-Item-Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  transition: all 0.15s linear;
+}
+
+.Pagination-Item-Link-Icon {
+  width: 20px;
+}
+
+.Pagination-Item-Link.isActive {
+  width: 40px;
+  height: 40px;
+  background-color: #aad945;
+  flex-shrink: 0;
+  border-radius: 100%;
+  pointer-events: none;
+  color: #111;
+}
+
+.Pagination-Item-Link:not(.isActive):hover {
+  opacity: 0.5;
+}
+
+/*スマフォ版の設定*/
+@media (max-width: 960px) {
+  .container {
+    width: 80%;
+  }
+
+  .title-group {}
+
+  .title1 {
+    font-size: 50px;
+  }
+
+  .title2 {
+    font-size: 20px;
+  }
+}

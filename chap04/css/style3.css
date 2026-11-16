@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+#header {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/img01.jpg") no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    background: #fff;
+}
+
+.logo {
+    padding: 10px 0 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 250px;
+}
+
+#header_nav {
+    text-align: center;
+}
+
+#header_nav ul {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 0;
+}
+
+#header_nav ul li {
+    display: inline;
+    margin: 0 50px 0 0;
+}
+
+#header_nav ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+#header_nav ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: .3s;
+}
+
+#header_nav ul li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #AA5C32;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0 0;
+}
+
+#header_nav ul li a:hover::after {
+    width: 100%;
+}
+
+.main_visual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 50px 60px;
+    background: #fff;
+}
+
+.main_visual_content {
+    text-align: center;
+}
+
+.main_visual_content img {
+    width: 400px;
+    margin: 20px 0 0;
+}
+
+.main_visual_content h1 {
+    font-size: 3rem;
+}
+
+/* arm_mch */
+#arm_mch {
+    width: 100%;
+    height: 100%;
+    margin: 100px 0 0 0;
+}
+
+.arm_mch_wrapper {
+    position: relative;
+    width: 1050px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.arm_mch_left {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 480px;
+    margin: 0 0 0;
+    text-align: center;
+}
+
+.arm_mch_left p {
+    margin: 30px 0;
+    line-height: 2.0;
+}
+
+.orner {
+    position: relative;
+    width: 100%;
+}
+
+.orner img {
+    width: 150px;
+    padding: 7px;
+    border: solid 7px #AA5C32;
+    border-radius: 100%;
+}
+
+.orner::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 10px 0;
+    border-top: 1px soild #000;
+    border-bottom: 1px soild #000;
+    color: #000;
+    font-size: 1.6rem;
+    content: "オーナー";
+}
+
+.orner::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 10px 0;
+    border-top: 1px soild #000;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-size: 1.6rem;
+    content: "安田 先生";
+}
+
+.arm_mch_right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 480px;
+    float: right;
+    transform: translateY(-50%);
+}
+
+.arm_mch_right img {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* item */
+#item {
+    width: 100%;
+    margin: 100px 0;
+}
+
+#item h2 {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.item_wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.item_list {
+    display: inline-block;
+    width: 20%;
+    margin: 0 5% 0 0;
+}
+
+.item_list:last-child {
+    margin: 0;
+}
+
+.item_content {
+    width: 100%;
+}
+
+.item_content img {
+    width: 100%;
+}
+
+.item_list a {
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    color: #000;
+    border: solid 1px #000;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.item_list a:hover {
+    background: #AA5C32;
+    color: #fff;
+    border: solid 1px #AA5c32;
+}
+
+/* access */
+#access {
+    background: #AA5C32;
+    height: 700px;
+    text-align: center;
+}
+
+.access_content {
+    padding: 50px 0 0;
+}
+
+.access_content h2 {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.access_content address {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.access_map {
+    margin: 20px 0;
+}
+
+#access small {
+    display: block;
+    color: #fff;
+    margin: 40px 0 0;
+}
+
+@media screen and (max-width:768px) {
+    .menu {
+        background: none;
+    }
+
+    .logo {
+        width: 100%;
+        background: #fff;
+        padding: 20px 0;
+    }
+
+    #header_nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #header_nav ul li a {
+        color: #fff;
+        opacity: 0.7;
+    }
+
+    .main_visual {
+        position: static;
+        transform: none;
+        width: auto;
+        margin: 100px 0 0;
+        padding: 20px 30px;
+    }
+
+    .main_visual img {
+        width: 100%;
+    }
+
+    #arm_mch {
+        width: 100%;
+        margin: 50px 0 0;
+    }
+
+    .arm_mch_wrapper {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .arm_mch_left {
+        position: static;
+        float: none;
+        transform: none;
+        width: 100%;
+    }
+
+    .arm_mch_right {
+        position: static;
+        float: none;
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .arm_mch_right img {
+        width: 100%;
+    }
+
+    .orner {
+        position: static;
+    }
+
+    .orner img {
+        width: 200px;
+        padding: 4px;
+        border: solid 4px #AA5C32;
+        border-radius: 100%;
+    }
+
+    .orner::before {
+        content: "";
+        position: static;
+        border-top: 0;
+        font-size: 1.4rem;
+        transform: none;
+        padding: 0;
+    }
+
+    .orner::after {
+        content: "";
+        position: static;
+        border-top: 0;
+        font-size: 1.4rem;
+        transform: none;
+    }
+
+    .item_list {
+        display: block;
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+
+    .item_list:last-child {
+        margin: 0 auto;
+    }
+}

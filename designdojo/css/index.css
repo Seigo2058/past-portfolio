@@ -1,0 +1,1262 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+body {
+    background: #f3f3f1;
+    font-family: "M PLUS 1";
+    color: #000;
+    font-weight: 800;
+    line-height: 1.75;
+    letter-spacing: 0.8px;
+}
+
+#g-nav {
+    display: none;
+}
+
+.ham-logo {
+    display: none;
+}
+
+.logo-sp {
+    display: none;
+}
+
+.logo-menu img {
+    object-fit: cover;
+    width: 12vw;
+    margin-top: 13px;
+}
+
+header {
+    padding: 0px 30px 70px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 70vw;
+    height: 12vh;
+}
+
+.menu-item a {
+    font-size: 1.2vw;
+    text-align: center;
+    color: #000;
+}
+
+.font {
+    font-family: 'Black Han Sans';
+    font-weight: lighter;
+    font-size: 1.4vw;
+    color: #000;
+}
+
+.menu-item a:hover {
+    color: #86B81B;
+}
+
+.highlight {
+    color: #86B81B;
+}
+
+.highlight-green {
+    color: #86B81B;
+}
+
+.highlight-white {
+    color: #fff;
+}
+
+.menu-item li {
+    text-align: center;
+    line-height: 1;
+}
+
+.sns-menu img {
+    width: 3vw;
+}
+
+.sns-menu {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sns-menu-x {
+    margin-left: 10px;
+}
+
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #86B81B;
+    text-align: center;
+    color: #fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+    width: 15vw;
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp1 {
+    animation-name: fadeDownAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeDownAnime {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.afadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.ifadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeDown {
+    animation-name: fadeDownAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeDownAnime {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+/* TOP */
+.top-img {
+    position: absolute;
+}
+
+.top-img img {
+    width: 100%;
+}
+
+.top-back {
+    position: absolute;
+}
+
+.top-back img {
+    width: 100%;
+    height: 80%;
+    margin-top: 320px;
+}
+
+#slider {
+    width: 80%;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0px auto;
+    border-radius: 30px;
+    position: relative;
+    z-index: 0;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    padding-top: 150px;
+}
+
+.top-title {
+    position: relative;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.top-title p {
+    font-family: 'Black Han Sans';
+    font-weight: bolder;
+    font-size: 13vw;
+    color: #000;
+    text-align: center;
+}
+
+.top-title-under {
+    position: relative;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.top-title-under p {
+    font-family: 'Black Han Sans';
+    font-weight: bolder;
+    font-size: 13vw;
+    color: #000;
+    text-align: center;
+}
+
+/* ABOUT */
+.about-arrow {
+    width: 100%;
+    height: 8vh;
+    margin: 20px auto 50px auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.target {
+    display: block;
+    max-width: 350px;
+    width: 1.5%;
+    height: auto;
+}
+
+/* Animation */
+.target {
+    animation: floating-y 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floating-y {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+
+
+.about-contents {
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 20vw;
+    margin-top: 270px;
+    margin-right: 6vw;
+}
+
+.about-back-title {
+    position: absolute;
+}
+
+.about-back-title p {
+    margin-left: -5vw;
+    font-size: 7vw;
+    opacity: 0.05;
+}
+
+.about-p {
+    position: relative;
+    display: table;
+    margin: 50px auto auto auto;
+}
+
+.about-p h1 {
+    font-size: 2.5vw;
+    font-weight: bolder;
+    color: #000;
+}
+
+
+.about-p p {
+    margin-top: 30px;
+}
+
+.about-button {
+    background-color: #6F47C3;
+    width: 100px;
+    height: 50px;
+    margin: 30px 0px 50px 0px;
+    border-radius: 10px;
+}
+
+.about-button a {
+    color: #fff;
+}
+
+.about-button:hover {
+    background-color: #8e63ea;
+}
+
+.button-about {
+    display: flex;
+    justify-content: center;
+}
+
+.activity img {
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.c-text {
+    overflow: hidden;
+    display: flex;
+    width: 99vw;
+    margin-inline: calc(50% - 50vw);
+}
+
+.c-text__item {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 120px;
+
+    &:nth-child(odd) {
+        animation: MoveLeft 24s -12s infinite linear;
+    }
+
+    &:nth-child(even) {
+        animation: MoveLeft2 24s infinite linear;
+    }
+}
+
+@keyframes MoveLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes MoveLeft2 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+
+
+
+
+/* NEWS */
+#NEWS {
+    margin-top: 50px;
+}
+
+.news-back {
+    background-color: #fff;
+    border-radius: 50px;
+    border: 5px solid #000;
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px auto 100px auto;
+}
+
+.news-title {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+.news-title h2 {
+    font-family: 'Black Han Sans';
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: 2.5px;
+}
+
+.news-title p {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #000;
+}
+
+.news-article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.news-line {
+    text-align: center;
+    margin: 0px auto 20px auto;
+}
+
+.news-text {
+    gap: 40px;
+}
+
+.news-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.news-img img {
+    width: 20vw;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+.news-img img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s all;
+}
+
+.news-p {
+    width: 250px;
+}
+
+.news-button {
+    background-color: #6F47C3;
+    width: 100px;
+    height: 50px;
+    margin: 30px 0px 50px 0px;
+    border-radius: 10px;
+}
+
+.news-button a {
+    color: #fff;
+}
+
+.news-button:hover {
+    background-color: #8e63ea;
+}
+
+.button-news {
+    display: flex;
+    justify-content: center;
+}
+
+/* MEMBER */
+
+.member-decolation-img {
+    width: 80vw;
+}
+
+.member-back {
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.member-back img {
+    width: 100%;
+}
+
+.member-title {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+.member-title h2 {
+    font-family: 'Black Han Sans';
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: 2.5px;
+}
+
+.member-title p {
+    font-size: 3vw;
+    font-weight: bolder;
+    color: #000;
+}
+
+.member-back-contents {
+    background-color: #95cb20;
+    border-radius: 50px;
+    border: 5px solid #000;
+    width: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px auto 100px auto;
+}
+
+.Container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0px 20px 0px;
+}
+
+.Container p {
+    color: #000;
+}
+
+.Box-Container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Box-Container img {
+    border: solid 3px #fff;
+}
+
+.Box-Container img {
+    width: 20vw;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.member-back-contents p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.member-button {
+    background-color: #6F47C3;
+    width: 100px;
+    height: 50px;
+    margin: 30px 0px 30px 0px;
+    border-radius: 10px;
+}
+
+.member-button a {
+    color: #fff;
+}
+
+.member-button:hover {
+    background-color: #8e63ea;
+}
+
+.button-member {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* WORKS */
+.works-title {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.works-title h2 {
+    font-family: 'Black Han Sans';
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: 2.5px;
+}
+
+.works-title p {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #000;
+}
+
+.works-button {
+    background-color: #6F47C3;
+    width: 100px;
+    height: 50px;
+    margin: 60px 0px;
+    border-radius: 10px;
+}
+
+.works-button a {
+    color: #fff;
+}
+
+.works-button:hover {
+    background-color: #8e63ea;
+}
+
+.button-works {
+    display: flex;
+    justify-content: center;
+}
+
+/* スライダー */
+.slider-works img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.slider-works .slick-slide {
+    margin: 5px 0px;
+}
+
+.slider-works1 img {
+    width: 220px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.slider-works1 .slick-slide {
+    margin: 5px 5px;
+}
+
+/* TERCHER */
+.tercher-arrow {
+    width: 100%;
+    height: 8vh;
+    margin: 50px auto 0px auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.tercher-arrow img {
+    display: block;
+    max-width: 350px;
+    width: 1.5%;
+    height: auto;
+}
+
+/* Animation */
+.target1 {
+    animation: floating-y 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floating-y {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+.tercher-title {
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+}
+
+.tercher-title h2 {
+    font-family: 'Black Han Sans';
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: 2.5px;
+}
+
+.tercher-title p {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #000;
+}
+
+.tercher-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.highlight-green-tercher {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 0.5;
+    letter-spacing: 2.5px;
+    margin-bottom: 15px;
+    color: #86B81B;
+}
+
+.tercher-p h3 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 0.5;
+    letter-spacing: 2.5px;
+    margin-bottom: 15px;
+}
+
+.tercher-p h3 span {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: 2.5px;
+}
+
+.tercher-p p {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 2.5px;
+}
+
+.tercher-p p span {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    color: #fff;
+}
+
+.tercher-button {
+    background-color: #fff;
+    width: 100px;
+    height: 50px;
+    margin: 60px 0px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.tercher-button a {
+    color: #000;
+}
+
+.tercher-button:hover {
+    background-color: #dddada;
+}
+
+.button-tercher {
+    display: flex;
+    justify-content: center;
+}
+
+/* SNS */
+.sns-title {
+    text-align: center;
+    margin: 0px;
+}
+
+.sns-title h2 {
+    font-family: 'Black Han Sans';
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: 2.5px;
+}
+
+.sns-title p {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #000;
+}
+
+.sns-line {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sns-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 100px 0px;
+}
+
+/* FOOTER */
+footer {
+    /* .foot-backの親要素 */
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.foot-back {
+    /* .footerに対する位置 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.foot-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-contents,
+.footer-text {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+.footer-logo img {
+    width: 70%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-menu a {
+    font-weight: bolder;
+    font-size: 1.2vw;
+    color: #000;
+    text-align: center;
+}
+
+.font-foot {
+    font-family: 'Black Han Sans';
+    font-weight: lighter;
+    font-size: 1.4vw;
+    color: #000;
+}
+
+.footer-sns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer-text p {
+    color: #fff;
+    font-size: 1.2vw;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.footer-text p span {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1280px) {
+    .menu-item {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: #fff;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        width: 900px;
+        height: 12vh;
+    }
+
+    .logo-menu img {
+        object-fit: cover;
+        width: 10rem;
+        margin-top: 13px;
+    }
+
+    .menu-item a {
+        font-size: 0.9rem;
+        text-align: center;
+        color: #000;
+    }
+
+    .font {
+        font-family: 'Black Han Sans';
+        font-weight: lighter;
+        font-size: 1.1rem;
+        color: #000;
+    }
+
+    .menu-item a:hover {
+        color: #86B81B;
+    }
+
+    .highlight {
+        color: #86B81B;
+    }
+
+    .highlight-green {
+        color: #86B81B;
+    }
+
+    .highlight-white {
+        color: #fff;
+    }
+
+    .menu-item li {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .sns-menu img {
+        width: 2rem;
+    }
+
+    .sns-menu {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .sns-menu-x {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #nav {
+        display: none;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .menu-item a {
+        display: none;
+    }
+
+    .ham-logo {
+        display: block;
+    }
+
+    .ham-logo img {
+        width: 10rem;
+    }
+
+    #g-nav {
+        display: block;
+    }
+
+    .font-sp {
+        font-family: 'Black Han Sans';
+        font-weight: lighter;
+        font-size: 1.1rem;
+        color: #000;
+    }
+
+    .g-nav-p a {
+        line-height: 1;
+        font-size: 1rem;
+        color: #000;
+        text-align: center;
+    }
+
+    .menu-item a:hover {
+        display: none;
+    }
+
+    .highlight {
+        display: none;
+    }
+
+    .menu-item li {
+        display: none;
+    }
+
+    .sns-menu img {
+        display: none;
+    }
+
+    .sns-menu {
+        display: none;
+    }
+
+    .sns-menu-x {
+        display: none;
+    }
+
+    header {
+        padding: 20px 30px 70px 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #g-nav {
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position: fixed;
+        z-index: 997;
+        /*ナビのスタート位置と形状*/
+        top: 0;
+        right: -120%;
+        width: 100%;
+        height: 100vh;
+        /*ナビの高さ*/
+        background: #86B81B;
+        /*動き*/
+        transition: all 0.6s;
+    }
+
+    /*アクティブクラスがついたら位置を0に*/
+    #g-nav.panelactive {
+        right: 0;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list {
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        /*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li {
+        list-style: none;
+        text-align: center;
+    }
+
+    #g-nav li a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn {
+        position: fixed;
+        z-index: 998;
+        /*ボタンを最前面に*/
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+    /*×に変化*/
+    .openbtn span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top: 15px;
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top: 31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    #slider {
+        width: 80%;
+        height: 500px;
+        object-fit: cover;
+        margin: 0px auto;
+        border-radius: 30px;
+        position: relative;
+        z-index: 0;
+        margin-top: -100px;
+        margin-bottom: -100px;
+        padding-top: 100px;
+    }
+
+    .top-title {
+        position: relative;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .top-title p {
+        font-family: 'Black Han Sans', serif;
+        font-weight: bolder;
+        font-size: 5vw;
+        color: #000;
+        text-align: center;
+    }
+
+    .top-title-under {
+        position: relative;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .top-title-under p {
+        font-family: 'Black Han Sans', serif;
+        font-weight: bolder;
+        font-size: 5vw;
+        color: #000;
+        text-align: center;
+    }
+
+    .top-back img {
+        width: 100%;
+        margin-top: 200px;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .top-back img {
+        width: 100%;
+        margin-top: 220px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .top-back img {
+        width: 100%;
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .ham-logo img {
+        width: 8rem;
+    }
+
+    .top-back img {
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    #slider {
+        width: 80%;
+        height: 70vh;
+        object-fit: cover;
+        margin: 0px auto;
+        border-radius: 30px;
+        position: relative;
+        z-index: 0;
+        margin-top: -100px;
+        margin-bottom: -100px;
+        padding-top: 100px;
+    }
+}

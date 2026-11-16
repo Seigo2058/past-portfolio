@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザイン道場ゼミ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/works.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black Han Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M PLUS 1" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=M+PLUS+1:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav">
+            <ul class="main-nav">
+                <div class="menu-item">
+                    <div class="logo-menu">
+                        <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+                    </div>
+                    <li><a href="about.html" style="text-decoration:none"><span class="font"><span
+                                    class="highlight">A</span>BOUT</span><br>Jゼミについて</a></li>
+                    <li><a href="works.html" style="text-decoration:none"><span class="font">W<span
+                                    class="highlight">O</span>RKS</span><br>製作作品</a></li>
+                    <li><a href="member.html" style="text-decoration:none"><span class="font">ME<span
+                                    class="highlight">M</span>BER</span><br>所属学生</a></li>
+                    <li><a href="index.html#NEWS" style="text-decoration:none"><span class="font">NEW<span
+                                    class="highlight">S</span></span><br>お知らせ</a></li>
+                    <li><a href="contact.html" style="text-decoration:none"><span class="font">CONT<span
+                                    class="highlight">A</span>CT</span><br>お問い合わせ</a></li>
+                    <div class="sns-menu">
+                        <div class="sns-menu-facebook">
+                            <a href=""><img src="images/facebook_menu.svg" alt=""></a>
+                        </div>
+                        <div class="sns-menu-x">
+                            <a href="https://x.com/chikalab330"><img src="images/x_menu.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                <ul>
+                    <li><a href="about.html" style="text-decoration:none"><span class="font-sp"><span
+                                    class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a></li>
+                    <li><a href="event.html" style="text-decoration:none"><span class="font-sp">W<span
+                                    class="highlight-white">O</span>RKS</span><br>製作作品</a></li>
+                    <li><a href="clinic.html" style="text-decoration:none"><span class="font-sp">ME<span
+                                    class="highlight-white">M</span>BER</span><br>所属学生</a></li>
+                    <li><a href="contact.html" style="text-decoration:none"><span class="font-sp">NEW<span
+                                    class="highlight-white">S</span></span><br>お知らせ</a></li>
+                    <li><a href="contact.html" style="text-decoration:none"><span class="font-sp">CONT<span
+                                    class="highlight-white">A</span>CT</span><br>お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="ham-logo">
+            <a href="index.html"><img src="images/logo_menu.svg" alt=""></a>
+        </div>
+    </header>
+
+    <div class="works-contents">
+        <div id="title-group">
+            <div>
+                <h1><span class="highlight-green">W</span>OEKS</h1>
+                <h2>作品紹介</h2>
+            </div>
+        </div>
+
+        <ul class="sort-btn">
+            <li class="sort00 active">全て</li><!--はじめに「全て」ボタンに現在地表示をつけるためactive というクラス名を付与-->
+            <li class="sort01">グラフィック</li>
+            <li class="sort02">Web制作</li>
+            <li class="sort03">シナリオ</li>
+            <li class="sort04">イラストレーション</li>
+            <li class="sort05">3DCG</li>
+        </ul>
+
+        <ul class="grid">
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/1-ym5.webp" data-fancybox="group1" data-caption="キャプション"><img
+                            src="images/work/graphic/1-ym5.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort02">
+                <div class="item-content">
+                    <a href="images/work/webdesign/2-ty1.webp" data-fancybox="group2" data-caption="キャプション"><img
+                            src="images/work/webdesign/2-ty1.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/1-ym1-Dysphoria01.webp" data-fancybox="group3"
+                        data-caption="キャプション"><img src="images/work/scenario/1-ym1-Dysphoria01.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/1-oh1-hrk.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/1-oh1-hrk.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort05">
+                <div class="item-content">
+                    <a href="images/work/3dcg/2-oa1.webp" data-fancybox="group5" data-caption="キャプション"><img
+                            src="images/work/3dcg/2-oa1.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/2-ss1-Cyber Town ver.webp" data-fancybox="group1"
+                        data-caption="キャプション"><img src="images/work/graphic/2-ss1-Cyber Town ver.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/1-ym2-Dysphoria02.webp" data-fancybox="group3"
+                        data-caption="キャプション"><img src="images/work/scenario/1-ym2-Dysphoria02.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-ay1-No Title.webp" data-fancybox="group4"
+                        data-caption="キャプション"><img src="images/work/illustration/2-ay1-No Title.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/2-ss2-Cyber Town.webp" data-fancybox="group1"
+                        data-caption="キャプション"><img src="images/work/graphic/2-ss2-Cyber Town.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/1-ym3-Dysphoria03.webp" data-fancybox="group3"
+                        data-caption="キャプション"><img src="images/work/scenario/1-ym3-Dysphoria03.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-ay2-Notitle.webp" data-fancybox="group4"
+                        data-caption="キャプション"><img src="images/work/illustration/2-ay2-Notitle.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/2-ss4-genseki.webp" data-fancybox="group1" data-caption="キャプション"><img
+                            src="images/work/graphic/2-ss4-genseki.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/1-ym4-Dysphoria04.webp" data-fancybox="group3"
+                        data-caption="キャプション"><img src="images/work/scenario/1-ym4-Dysphoria04.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-on1.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-on1.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/2-ss5-near moon.webp" data-fancybox="group1" data-caption="キャプション"><img
+                            src="images/work/graphic/2-ss5-near moon.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/3-nk2.webp" data-fancybox="group3" data-caption="キャプション"><img
+                            src="images/work/scenario/3-nk2.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-on2.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-on2.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/2-ss6-SOISEP.webp" data-fancybox="group1" data-caption="キャプション"><img
+                            src="images/work/graphic/2-ss6-SOISEP.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/3-nk3.webp" data-fancybox="group3" data-caption="キャプション"><img
+                            src="images/work/scenario/3-nk3.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-ss3-dot.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-ss3-dot.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/2-ss7-.webp" data-fancybox="group1" data-caption="キャプション"><img
+                            src="images/work/graphic/2-ss7-.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/3-nk4.webp" data-fancybox="group3" data-caption="キャプション"><img
+                            src="images/work/scenario/3-nk4.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-wn1.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-wn1.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/3-ik-obaka.webp" data-fancybox="group1" data-caption="キャプション"><img
+                            src="images/work/graphic/3-ik-obaka.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/3-nk5.webp" data-fancybox="group3" data-caption="キャプション"><img
+                            src="images/work/scenario/3-nk5.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-ws2.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-ws2.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort01">
+                <div class="item-content">
+                    <a href="images/work/graphic/3-ik5-nerukohasodatsu.webp" data-fancybox="group1"
+                        data-caption="キャプション"><img src="images/work/graphic/3-ik5-nerukohasodatsu.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/3-nk6.webp" data-fancybox="group3" data-caption="キャプション"><img
+                            src="images/work/scenario/3-nk6.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-ws3.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-ws3.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort03">
+                <div class="item-content">
+                    <a href="images/work/scenario/3-nk7.webp" data-fancybox="group3" data-caption="キャプション"><img
+                            src="images/work/scenario/3-nk7.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/2-ym1.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/2-ym1.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/3-ik1-adu.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/3-ik1-adu.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/3-ik2-hitori.webp" data-fancybox="group4"
+                        data-caption="キャプション"><img src="images/work/illustration/3-ik2-hitori.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/3-ik4-ishiki.webp" data-fancybox="group4"
+                        data-caption="キャプション"><img src="images/work/illustration/3-ik4-ishiki.webp" alt=""></a>
+                </div>
+            </li>
+            <li class="item sort04">
+                <div class="item-content">
+                    <a href="images/work/illustration/3-nk1.webp" data-fancybox="group4" data-caption="キャプション"><img
+                            src="images/work/illustration/3-nk1.webp" alt=""></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="foot-back">
+            <img src="images/footer-back.svg" alt="">
+        </div>
+
+        <div class="footer-contents">
+            <div class="footer-logo">
+                <img src="images/footer-logo.svg" alt="">
+            </div>
+            <div class="footer-menu">
+                <a href="about.html" style="text-decoration:none"><span class="font-foot"><span
+                            class="highlight-white">A</span>BOUT</span><br>Jゼミについて</a>
+                <a href="event.html" style="text-decoration:none"><span class="font-foot">W<span
+                            class="highlight-white">O</span>RKS</span><br>製作作品</a>
+                <a href="clinic.html" style="text-decoration:none"><span class="font-foot">ME<span
+                            class="highlight-white">M</span>BER</span><br>所属学生</a>
+                <a href="" style="text-decoration:none"><span class="font-foot">CONT<span
+                        class="highlight-white">A</span>CT</span><br>お問い合わせ</a>
+            </div>
+        </div>
+        <div class="footer-text">
+            <div class="footer-sns">
+                <img src="images/sns-x.svg" alt="">
+                <img src="images/sns-facebook.svg" alt="">
+                <img src="images/sns-instagram.svg" alt="">
+            </div>
+            <p><span>プライバシーポリシー</span><br>
+                ©DESIGN DOJO SEMINAR 2024</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/works.js"></script>
+    <script src="js/move.js"></script>
+</body>
